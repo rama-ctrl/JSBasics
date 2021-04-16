@@ -8,16 +8,20 @@
 </head>
 
 <body>
-    <h1>Hello World </h1>
-    <h2> Hello People </h2>
-    <h3>Hello Earth</h3>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
-    <button onclick="alert('hello World!')"> Click me  </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+    <button class="btn"> Random Button </button>
+<script>
+document.querySelectorAll('.btn').forEach((item) =>{
+    item.addEventListener('click',() => {
+        alert('This is awesome!')
+    })
+})
+</script>
 
 </body>
 </html>
