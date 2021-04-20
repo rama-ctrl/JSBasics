@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Basics</title>
+    <title>Document</title>
 </head>
-
 <body>
+    <h1>Javascript learning</h1>
 
-    <!--<a href="index.html"> Home </a></br> -->
-    <a href="test1.html"> Test </a></br>
-    <a href="loginform.html"> Login </a></br>
-    <button class="btn"> Special Button </button>
-    <button class="btn"> Random Button </button>
-    <button class="btn"> Random Button </button>
-    <button class="btn"> Random Button </button>
-    <button class="btn"> Random Button </button>
-    <button class="btn"> Random Button </button>
-    <button class="btn"> Random Button </button>
-    <button id="btn1"> Login </button>
-<script>
-document.querySelectorAll('.btn').forEach((item) =>{
-    item.addEventListener('click',() => {
-        alert('This is awesome! ')
-    })
-})
-document. getElementById("btn1"). onclick = function () {
-window.location.href = "http://www.w3schools.com"}
-</script>
+    <script>
+        document.write("Hello world from Javascript again.");
+        console.log('Hello World!');
 
+        class Rectangle{
+            constructor(l,b,c){
+                console.log('Rectangle is being created');
+
+                this.length = l;
+                this.width = b;
+                this.color = c;
+            }
+
+            getArea(){
+                return this.length * this.width
+            }
+        }
+
+        let myRectangle1 = new Rectangle(5,3,"blue");
+        let myRectangle2 = new Rectangle(7,5,"red");
+
+        console.log(myRectangle1.getArea());
+        console.log(myRectangle2.getArea());
+
+        
+
+    </script>
 </body>
 </html>
