@@ -25,13 +25,20 @@
             getArea(){
                 return this.length * this.width
             }
+
+            printInfo(){
+                console.log("I am a Rectangle of " + this.length + " x " + this.width + " and I am of color " + this.color);
+            }
+            
         }
 
         let myRectangle1 = new Rectangle(5,3,"blue");
         let myRectangle2 = new Rectangle(7,5,"red");
 
         console.log(myRectangle1.getArea());
+        console.log(myRectangle1.printInfo());
         console.log(myRectangle2.getArea());
+        console.log(myRectangle2.printInfo());
 
         
 
